@@ -1,8 +1,6 @@
 let movieNameRef = document.getElementById("movie-name");
 let searchBtn = document.getElementById("search-btn");
 let result = document.getElementById("result");
-
-// Search movies
 let getMovies = () => {
   let movieName = movieNameRef.value.trim();
   if (movieName.length <= 0) {
@@ -66,3 +64,4 @@ movieNameRef.addEventListener("keydown", (e) => {
 });
 
 window.addEventListener("load", getMovies);
+
